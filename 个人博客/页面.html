@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./photo/背景.jpg);
+            background-size: cover; /* 使背景图自适应视口 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 使得 body 高度占满视口 */
+            margin: 0;
+        }
+
+        img {
+            border-radius: 50%; /* 圆形效果 */
+            width: 200px; /* 控制图片的宽度 */
+            height: 200px; /* 控制图片的高度 */
+            animation: rotation 7s linear infinite; /* 添加旋转动画 */
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script>
+        // 设置在页面加载后延迟5秒钟自动跳转到指定链接
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "file:///D:/%E4%BB%8E%E7%8E%B0%E5%9C%A8%E5%BC%80%E5%A7%8B%E5%AD%A6%E7%9A%84%E7%BC%96%E7%A8%8B/web/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E4%B8%BB%E9%A1%B5.html"; 
+            }, 3000); // 延迟3000毫秒，即3秒
+        };
+    </script>
+</head>
+<body>
+    <a href="./主页.html">
+        <img src="./photo/preview.gif" alt="">
+    </a>
+</body>
+</html>

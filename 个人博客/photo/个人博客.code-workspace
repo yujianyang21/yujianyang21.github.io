@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "个人博客",
+			"path": ".."
+		},
+		{
+			"name": "uploads",
+			"path": "../../webHTML+css1-198/day7/uploads"
+		},
+		{
+			"name": "images",
+			"path": "../../webHTML+css1-198/day7/images"
+		},
+		{
+			"name": ".vscode",
+			"path": "../../webHTML+css1-198/day7/.vscode"
+		},
+		{
+			"name": "css",
+			"path": "../../webHTML+css1-198/day7/css"
+		}
+	],
+	"settings": {}
+}
