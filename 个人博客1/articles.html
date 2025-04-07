@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - 我的个人博客</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>MyBlog</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="articles.html" class="active">文章</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+            <div class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="articles-page">
+        <section class="articles-header" data-aos="fade-up">
+            <h1>所有文章</h1>
+            <div class="articles-controls">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索文章...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-box">
+                    <select>
+                        <option value="">所有分类</option>
+                        <option value="tech">技术</option>
+                        <option value="life">生活</option>
+                        <option value="design">设计</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles-grid" data-aos="fade-up">
+            <article class="article-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="article-image">
+                    <img src="https://picsum.photos/400/250" alt="文章配图">
+                    <div class="article-overlay">
+                        <div class="article-tags">
+                            <span>技术</span>
+                            <span>编程</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <h3>这是一篇博客文章标题</h3>
+                    <p class="article-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-20</span>
+                        <span><i class="far fa-comment"></i> 5 评论</span>
+                    </p>
+                    <p class="article-excerpt">
+                        这里是文章摘要，简短介绍文章的主要内容...
+                    </p>
+                    <a href="article.html?id=1" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="article-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="article-image">
+                    <img src="https://picsum.photos/400/251" alt="文章配图">
+                    <div class="article-overlay">
+                        <div class="article-tags">
+                            <span>生活</span>
+                            <span>旅行</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <h3>另一篇精彩的文章</h3>
+                    <p class="article-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-19</span>
+                        <span><i class="far fa-comment"></i> 3 评论</span>
+                    </p>
+                    <p class="article-excerpt">
+                        这里是另一篇文章的摘要内容...
+                    </p>
+                    <a href="article.html?id=2" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="article-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="article-image">
+                    <img src="https://picsum.photos/400/252" alt="文章配图">
+                    <div class="article-overlay">
+                        <div class="article-tags">
+                            <span>设计</span>
+                            <span>创意</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <h3>第三篇精彩文章</h3>
+                    <p class="article-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-18</span>
+                        <span><i class="far fa-comment"></i> 7 评论</span>
+                    </p>
+                    <p class="article-excerpt">
+                        这里是第三篇文章的摘要内容...
+                    </p>
+                    <a href="article.html?id=3" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </section>
+
+        <div class="pagination" data-aos="fade-up">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">10</a>
+            <a href="#" class="next">下一页 <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>MyBlog</h2>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="articles.html">文章</a>
+                <a href="about.html">关于</a>
+                <a href="contact.html">联系</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
