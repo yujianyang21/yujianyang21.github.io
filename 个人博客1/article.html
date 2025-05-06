@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章标题 - 我的个人博客</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>MyBlog</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="articles.html">文章</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+            <div class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="article-detail">
+        <article class="article-content" data-aos="fade-up">
+            <div class="article-header">
+                <h1 class="article-title">这是一篇精彩的博客文章</h1>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar"></i> 2024-03-20</span>
+                    <span><i class="far fa-user"></i> 作者名</span>
+                    <span><i class="far fa-comment"></i> 5 评论</span>
+                    <span><i class="far fa-eye"></i> 1234 阅读</span>
+                </div>
+                <div class="article-tags">
+                    <span class="tag">技术</span>
+                    <span class="tag">编程</span>
+                    <span class="tag">Web开发</span>
+                </div>
+            </div>
+
+            <div class="article-featured-image">
+                <img src="https://picsum.photos/1200/600" alt="文章特色图片">
+            </div>
+
+            <div class="article-body">
+                <p>这是文章的开篇段落，介绍文章的主要内容和背景...</p>
+                
+                <h2>第一个小标题</h2>
+                <p>这里是第一个部分的内容，可以包含代码示例、图片等...</p>
+                
+                <pre><code class="language-javascript">
+// 这是一个代码示例
+function example() {
+    console.log("Hello, World!");
+}
+                </code></pre>
+
+                <h2>第二个小标题</h2>
+                <p>这里是第二个部分的内容...</p>
+
+                <blockquote>
+                    这是一段引用文字，可以引用名人名言或者重要观点。
+                    <cite>- 引用来源</cite>
+                </blockquote>
+
+                <h2>总结</h2>
+                <p>这是文章的总结部分...</p>
+            </div>
+
+            <div class="article-footer">
+                <div class="article-share">
+                    <span>分享到：</span>
+                    <a href="#" class="share-link"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="share-link"><i class="fab fa-weibo"></i></a>
+                    <a href="#" class="share-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <section class="comments-section" data-aos="fade-up">
+            <h3>评论区</h3>
+            <div class="comment-form">
+                <textarea placeholder="写下你的评论..."></textarea>
+                <button class="submit-comment">发表评论</button>
+            </div>
+            <div class="comments-list">
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://picsum.photos/50/50" alt="用户头像">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">用户名</span>
+                            <span class="comment-date">2024-03-20</span>
+                        </div>
+                        <p class="comment-text">这是一条评论内容...</p>
+                        <div class="comment-actions">
+                            <button class="reply-btn">回复</button>
+                            <button class="like-btn"><i class="far fa-heart"></i> 12</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-articles" data-aos="fade-up">
+            <h3>相关文章</h3>
+            <div class="related-articles-grid">
+                <article class="related-article">
+                    <img src="https://picsum.photos/300/200" alt="相关文章图片">
+                    <h4>相关文章标题1</h4>
+                    <a href="article.html?id=4" class="read-more">阅读更多</a>
+                </article>
+                <article class="related-article">
+                    <img src="https://picsum.photos/300/201" alt="相关文章图片">
+                    <h4>相关文章标题2</h4>
+                    <a href="article.html?id=5" class="read-more">阅读更多</a>
+                </article>
+                <article class="related-article">
+                    <img src="https://picsum.photos/300/202" alt="相关文章图片">
+                    <h4>相关文章标题3</h4>
+                    <a href="article.html?id=6" class="read-more">阅读更多</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>MyBlog</h2>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="articles.html">文章</a>
+                <a href="about.html">关于</a>
+                <a href="contact.html">联系</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
